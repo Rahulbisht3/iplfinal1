@@ -1,7 +1,9 @@
+let a;
 const getbt = document.getElementById("btn");
 getbt.addEventListener("click", function () {
   const s = document.getElementById("y").value;
   console.log("clicked");
+  a = s;
   console.log(s);
   fetch(`/matches-played?season=${s}`)
     .then((data) => data.json())
@@ -81,7 +83,7 @@ function visualizeMatchesPlayedPerYear(matchesPlayedPerYear) {
       type: "column",
     },
     title: {
-      text: "1. Matches Played Per Year",
+      text: "2. Matches Played Per Year",
     },
     subtitle: {
       text:
@@ -117,7 +119,7 @@ function visualizeMostWinsPerYear(mostWinsPerYear) {
       type: "column",
     },
     title: {
-      text: "2. Number of matches won by all team over all the years of ipl",
+      text: "3. Number of matches won by all team over all the years of ipl",
     },
     subtitle: {
       text: "Source: WorldClimate.com",
@@ -162,7 +164,7 @@ function visualizeExtraRunsByEachTeam(extraRunsByEachTeam) {
       type: "column",
     },
     title: {
-      text: "3. Extra runs conceded by each team in 2016",
+      text: "4. Extra runs conceded by each team in 2016",
     },
     subtitle: {
       text:
@@ -283,7 +285,7 @@ function visualizeTopEconomicalBowler(topEconomicalBowler) {
       type: "column",
     },
     title: {
-      text: "4. Top Economical Bowlers in 2015",
+      text: `1. Top Economical Bowlers in ${a}`,
     },
     subtitle: {
       text:

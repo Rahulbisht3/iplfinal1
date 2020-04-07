@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (request, response) => {
-  response.sendFile("index.html", {
+  response.render("index.html", {
     root: __dirname + "/public",
   });
 });
