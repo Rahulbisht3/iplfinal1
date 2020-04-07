@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="IPL visualization" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>
+      IPL visualization
+    </title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  </head>
+
+  <body>
+    <h1>IPL Dataset visualization</h1>
+    <p>Year:<input type="text" id="y" placeholder="Enter Year" /></p>
+    <button type="submit" id="btn">Submit</button>
+    <div
+      id="top-Economical-Bowler"
+      style="min-width: 310px; height: 500px; margin: 0 auto;"
+    ></div>
+    <div
+      id="matches-played-per-year"
+      style="min-width: 310px; height: 400px; margin: 0 auto;"
+    ></div>
+    <div
+      id="most-Wins-Per-Year"
+      style="min-width: 310px; height: 400px; margin: 0 auto;"
+    ></div>
+    <div
+      id="extra-Runs-By-Each-Team"
+      style="min-width: 310px; height: 500px; margin: 0 auto;"
+    ></div>
+    <div
+      id="maximum"
+      style="min-width: 310px; height: 500px; margin: 0 auto;"
+    ></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
